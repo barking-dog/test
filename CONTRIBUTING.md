@@ -1,7 +1,7 @@
 # Contributing
 
 Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given. You can contribute in the ways listed below.
+helps, and credit will always be given. You can contribute in the ways listed below. HA
 
 ## Report Bugs
 
