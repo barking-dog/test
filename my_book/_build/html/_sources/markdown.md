@@ -2,7 +2,7 @@
 
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
+called **MyST Markdown**. Hi there! PUSH
 
 ## What is MyST?
 
@@ -25,7 +25,7 @@ that is being called.
 At its simplest, you can insert a directive into your book's content like so:
 
 ````
-```{mydirectivename}
+​```{mydirectivename}
 My directive content
 ```
 ````
@@ -43,7 +43,7 @@ Here is a note
 
 This results in:
 
-```{note}
+​```{note}
 Here is a note
 ```
 
@@ -85,13 +85,13 @@ For example, if the references for your book are stored in `references.bib`,
 then the bibliography is inserted with:
 
 ````
-```{bibliography} references.bib
+​```{bibliography} references.bib
 ```
 ````
 
 Resulting in a rendered bibliography that looks like:
 
-```{bibliography} references.bib
+​```{bibliography} references.bib
 ```
 
 
@@ -112,7 +112,7 @@ Once a markdown file has Jupytext metadata in it, you can add the following
 directive to run the code at build time:
 
 ````
-```{code-cell}
+​```{code-cell}
 print("Here is some code to execute")
 ```
 ````
@@ -123,3 +123,5 @@ in-line with the rest of your content.
 
 For more information about executing computational content with Jupyter Book,
 see [The MyST-NB documentation](https://myst-nb.readthedocs.io/).
+
+````
