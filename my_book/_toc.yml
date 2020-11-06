@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: intro
 - file: content
+- file: new_section
   sections:
     - file: markdown
     - file: notebooks
     - file: new
-- file: new_section
