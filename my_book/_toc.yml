@@ -5,3 +5,5 @@
   sections:
     - file: markdown
     - file: notebooks
+    - file: new
+- file: new_section
