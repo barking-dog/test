@@ -1,9 +1,19 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
+
+# ===== Main Landing Page ========================================
 - file: intro
-- file: content
-- file: new_section
+
+# ===== First Chapter ========================================
+- file: first/content
   sections:
-    - file: markdown
-    - file: notebooks
-    - file: new
+  - title: Section One
+    file: first/new_section
+  - title: Section Two
+    file: two/markdown  
+    
+# ===== Second Chapter ========================================    
+- file: three/notebooks
+  sections:
+    - title: Section One
+      file: three/new
