@@ -1,35 +1,44 @@
-# my-book
+## The Book
 
-This cookiecutter creates a simple boilerplate for a Jupyter Book.h
+This is the README file for _The Book_ book hosted online at https://test-book.netlify.app/.
 
-## Usage
+All the text for each chapter of the `book` lives inside the folder `./website` directory.
+All figures associated to the chapters are stored in and linked from the `./website/figures` directory.
+Everything else is in the `website/` directory.
 
-### Building the book
+### Configuration
 
-If you'd like to develop on and build the my-book book, you should:
+- The table of contents (TOC) defines the order of chapters as they appear in the book.
+To change the TOC, please edit the `website/_toc.yml` file with correct information on filenames and their relative locations in this repository.
+Documentation on controlling the TOC structure can be found on the [jupyter book website](https://jupyterbook.org/customize/toc.html).
+- Same applies for more general configuration using `website/_config.yml`.
+Documentation on configuring book settings can be found on the [jupyter book website](https://jupyterbook.org/customize/config.html).
 
-- Clone this repository and run
-- Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-- (Recommended) Remove the existing `my-book/_build/` directory
-- Run `jupyter-book build my-book/`
+### Deploying
 
-A fully-rendered HTML version of the book will be built in `my-book/_build/html/`.
+The site is built automatically using these two directories. All of the requirements are specificied in `website/requirements.txt`.
 
-### Hosting the book
+#### Locally (Mac / Linux Only)
 
-The html version of the book is hosted on the `gh-pages` branch of this repo. A GitHub actions workflow has been created that automatically builds and pushes the book to this branch on a push or pull request to main.
+To install jupyter-book etc.
+```
+cd book/website
+pip install -r requirements.txt
+```
 
-If you wish to disable this automation, you may remove the GitHub actions workflow and build the book manually by:
+Finally, to build the book and preview your changes locally you can run the following command:
+```
+cd book/website
+jupyter-book build .
+```
+Now you can open the path provided by jupyter-book as output in your terminal.
 
-- Navigating to your local build; and running,
-- `ghp-import -n -p -f my-book/_build/html`
+#### Clean up the recent build
 
-This will automatically push your build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
-
-## Contributors
-
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/barking-dog/my_book/graphs/contributors).
-
-## Credits
-
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+When you test your edits by building the book multiple times, it is better to clean up the last build before generating a new one.
+You can either manually delete the `book/website/_build` folder every time, or run this command:
+```
+cd book/website
+jupyter-book clean .
+```
+More details on this process can be read on the [JupyterBook's GitHub repository](https://github.com/executablebooks/jupyter-book/blob/master/docs/advanced/advanced.md#clean-your-books-generated-files).
