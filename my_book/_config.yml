@@ -9,3 +9,6 @@ title                       : Книга-хуига  # The title of the book. Wi
 author                      : Семён Горбатый  # The author of the book
 copyright                   : "2020"  # Copyright year to be placed in the footer
 logo                        : figures/logo.png  # A path to the book logo
+
+html:
+  navbar_number_sections    : True  # Add a number to each section in your left navbar
