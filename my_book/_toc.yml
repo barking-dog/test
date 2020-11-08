@@ -5,10 +5,10 @@
 - file: intro
 
 # ===== First Chapter ========================================
-- file: first/content
+- file: one/content
   sections:
   - title: Section One
-    file: first/new_section
+    file: one/new_section
   - title: Section Two
     file: two/markdown  
     
